@@ -218,21 +218,23 @@ export const GameDashboard: React.FC<GameDashboardProps> = ({ user }) => {
       <div className="bg-gray-900 backdrop-blur-xl p-4 border-b border-gray-800">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-accent rounded-2xl flex items-center justify-center shadow-modern">
-              <Crown className="w-6 h-6 text-white" />
-            </div>
+            <img
+              src="/logo_1752328959.png"
+              alt="Raspou Ganhou"
+              className="h-10 drop-shadow-2xl"
+            />
             <div>
-              <h1 className="text-white font-bold text-lg">
-                Olá, {user.name.split(' ')[0]}! 👋
+              <h1 className="text-white font-bold text-base">
+                Olá, {user.name.split(' ')[0]}!
               </h1>
-              <p className="text-gray-300 text-sm">
-                Bem-vindo de volta ao jogo
+              <p className="text-gray-400 text-xs">
+                Bem-vindo de volta
               </p>
             </div>
           </div>
           <div className="text-right">
             <div className="bg-accent/20 rounded-xl px-3 py-1 border border-accent/50">
-              <span className="text-accent text-xs font-bold">🔥 ATIVO</span>
+              <span className="text-accent text-xs font-bold">ATIVO</span>
             </div>
           </div>
         </div>
